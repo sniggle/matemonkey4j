@@ -14,6 +14,8 @@
 
   <modules>
     <module>matemonkey4j-api</module>
+    <module>matemonkey4j-impl</module>
+    <module>matemonkey4j-async</module>
   </modules>
 
 

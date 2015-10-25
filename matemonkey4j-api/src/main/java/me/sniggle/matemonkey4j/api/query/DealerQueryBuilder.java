@@ -20,6 +20,17 @@ public final class DealerQueryBuilder implements Query {
     private final double longitudeTop;
     private final double longitudeBottom;
 
+    /**
+     *
+     * @param latitudeLeft
+     *    the left bottom latitude
+     * @param latitudeRight
+     *    the right top latitude
+     * @param longitudeTop
+     *    the right top longitude
+     * @param longitudeBottom
+     *    the left bottom longitude
+     */
     public BBox(double latitudeLeft, double latitudeRight, double longitudeTop, double longitudeBottom) {
       this.latitudeLeft = latitudeLeft;
       this.latitudeRight = latitudeRight;
@@ -45,7 +56,7 @@ public final class DealerQueryBuilder implements Query {
 
   /**
    *
-   * @return
+   * @return a query builder instance
    */
   public static DealerQueryBuilder create() {
     return new DealerQueryBuilder();
@@ -54,10 +65,15 @@ public final class DealerQueryBuilder implements Query {
   /**
    *
    * @param latitudeLeft
+   *    the left bottom corner (x)
    * @param longitudeBottom
+   *    the left bottom corner (y)
    * @param latitudeRight
+   *    the right top  corner (x)
    * @param longitudeTop
-   * @return
+   *    the right top corner (y)
+   *
+   * @return the query builder instance for chaining
    */
   public DealerQueryBuilder bbox(double latitudeLeft, double longitudeBottom, double latitudeRight, double longitudeTop) {
     if( latitudeLeft > 90.0 || latitudeLeft < -90.0 || latitudeRight > 90.0 || latitudeRight < -90.0 ) {
@@ -73,7 +89,9 @@ public final class DealerQueryBuilder implements Query {
   /**
    *
    * @param dealerType
-   * @return
+   *    the dealer type to query for
+   *
+   * @return query builder instance for chaining
    */
   public DealerQueryBuilder addDealerType(DealerType dealerType) {
     if( dealerType != null ) {
@@ -85,7 +103,9 @@ public final class DealerQueryBuilder implements Query {
   /**
    *
    * @param productId
-   * @return
+   *    the product id to query for
+   *
+   * @return the query builder instance for chaning
    */
   public DealerQueryBuilder addProductId(String productId) {
     if( productId != null && !productId.trim().isEmpty()) {
@@ -96,7 +116,7 @@ public final class DealerQueryBuilder implements Query {
 
   /**
    *
-   * @return
+   * @return the query as a result of the build process
    */
   public Query build() {
     return this;

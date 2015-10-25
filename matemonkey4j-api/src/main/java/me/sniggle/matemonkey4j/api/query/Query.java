@@ -7,7 +7,7 @@ public interface Query {
 
   /**
    *
-   * @return
+   * @return the query string
    */
   String toQuery();
 

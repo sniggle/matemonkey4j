@@ -12,7 +12,7 @@ public class SearchQueryBuilder implements Query {
 
   /**
    *
-   * @return
+   * @return a query builder instance
    */
   public static SearchQueryBuilder create() {
     return new SearchQueryBuilder();
@@ -21,7 +21,8 @@ public class SearchQueryBuilder implements Query {
   /**
    *
    * @param searchTerm
-   * @return
+   *    the search term to look up
+   * @return the query builder instance
    */
   public SearchQueryBuilder searchTerm(String searchTerm) {
     this.searchTerm = searchTerm;
@@ -30,7 +31,7 @@ public class SearchQueryBuilder implements Query {
 
   /**
    *
-   * @return
+   * @return the query to apply
    */
   public Query build() {
     return this;

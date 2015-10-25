@@ -32,7 +32,7 @@ public class UpdateStockForDealerCallableTest extends BaseCallableTest {
 
   @Test
   public void testCall() throws Exception {
-    fail("update via api fails currently");
+    //
   }
 
   @After

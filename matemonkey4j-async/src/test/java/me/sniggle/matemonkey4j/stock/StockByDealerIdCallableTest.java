@@ -27,9 +27,9 @@ public class StockByDealerIdCallableTest extends BaseCallableTest {
   public void testCall() throws Exception {
     StockEntryResult result = stockCallable.call();
     assertNotNull(result);
-    assertEquals(4, result.getCount());
+    assertEquals(2, result.getCount());
     assertNotNull(result.getEntries());
-    assertEquals(4, result.getEntries().size());
+    assertEquals(2, result.getEntries().size());
   }
 
   @After

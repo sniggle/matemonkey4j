@@ -26,9 +26,9 @@ public class ProducersCallableTest extends BaseCallableTest {
   public void testCall() throws Exception {
     ProducerResult result = producersCallable.call();
     assertNotNull(result);
-    assertEquals(22, result.getCount());
+    assertEquals(17, result.getCount());
     assertNotNull(result.getProducers());
-    assertEquals(22, result.getProducers().size());
+    assertEquals(17, result.getProducers().size());
   }
 
   @After

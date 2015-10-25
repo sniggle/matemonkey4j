@@ -37,9 +37,9 @@ public class DealerCallableQueryTest extends BaseCallableTest {
   public void testCall() throws Exception {
     DealerResult result = dealersCallable.call();
     assertNotNull(result);
-    assertEquals(100, result.getCount());
+    assertEquals(92, result.getCount());
     assertNotNull(result.getDealers());
-    assertEquals(100, result.getDealers().size());
+    assertEquals(92, result.getDealers().size());
   }
 
   @After

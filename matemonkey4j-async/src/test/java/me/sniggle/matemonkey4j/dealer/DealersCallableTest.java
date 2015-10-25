@@ -27,9 +27,9 @@ public class DealersCallableTest extends BaseCallableTest {
   public void testCall() throws Exception {
     DealerResult result = dealersCallable.call();
     assertNotNull(result);
-    assertEquals(3515, result.getCount());
+    assertEquals(3426, result.getCount());
     assertNotNull(result.getDealers());
-    assertEquals(3515, result.getDealers().size());
+    assertEquals(3426, result.getDealers().size());
   }
 
   @After

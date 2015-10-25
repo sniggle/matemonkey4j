@@ -6,6 +6,8 @@ import me.sniggle.matemonkey4j.api.query.Query;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * Callable to query the search API
  */
 public class SearchCallable extends BaseMateMonkeyCallable<Void, GeoLocation> {
 
@@ -14,6 +16,7 @@ public class SearchCallable extends BaseMateMonkeyCallable<Void, GeoLocation> {
   /**
    *
    * @param query
+   *    the query to apply
    */
   public SearchCallable(Query query) {
     super(GeoLocation.class, "/search");

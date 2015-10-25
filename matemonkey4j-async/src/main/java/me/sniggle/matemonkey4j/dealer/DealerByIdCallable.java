@@ -5,6 +5,8 @@ import me.sniggle.matemonkey4j.api.model.Dealer;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * Callable used to query for a specific Dealer
  */
 public class DealerByIdCallable extends BaseMateMonkeyCallable<Void, Dealer> {
 
@@ -13,6 +15,7 @@ public class DealerByIdCallable extends BaseMateMonkeyCallable<Void, Dealer> {
   /**
    *
    * @param id
+   *    the ID of the dealer to query for
    */
   public DealerByIdCallable(long id) {
     super(Dealer.class, "/dealers/:id");

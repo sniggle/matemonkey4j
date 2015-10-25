@@ -7,6 +7,8 @@ import java.util.Map;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * Callable to query for the current stock of a dealer
  */
 public class StockByDealerIdCallable extends BaseMateMonkeyCallable<Void, StockEntryResult> {
 
@@ -16,6 +18,7 @@ public class StockByDealerIdCallable extends BaseMateMonkeyCallable<Void, StockE
   /**
    *
    * @param dealerId
+   *    the ID of the dealer to query for
    */
   public StockByDealerIdCallable(long dealerId) {
     this(dealerId, true);
@@ -24,7 +27,9 @@ public class StockByDealerIdCallable extends BaseMateMonkeyCallable<Void, StockE
   /**
    *
    * @param dealerId
+   *    the ID of the dealer to query for
    * @param current
+   *    flag indicating whether only current stock should be returned (true: current stock)
    */
   public StockByDealerIdCallable(long dealerId, boolean current) {
     super(StockEntryResult.class, "/dealers/:id/stock");

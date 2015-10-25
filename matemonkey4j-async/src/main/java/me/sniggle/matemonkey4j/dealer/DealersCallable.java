@@ -8,13 +8,15 @@ import java.util.Map;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * Callable to query all dealers or with specific query
  */
 public class DealersCallable extends BaseMateMonkeyCallable<Void, DealerResult> {
 
   private final Query query;
 
   /**
-   *
+   * default constructor to query all dealers
    */
   public DealersCallable() {
     this(null);
@@ -23,6 +25,7 @@ public class DealersCallable extends BaseMateMonkeyCallable<Void, DealerResult> 
   /**
    *
    * @param query
+   *    the query to restrict the dealers
    */
   public DealersCallable(Query query) {
     super(DealerResult.class, "/dealers");

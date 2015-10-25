@@ -10,6 +10,8 @@ import java.net.URLConnection;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * callable used for dealer creation
  */
 public class CreateDealerCallable extends BaseMateMonkeyCreateCallable<Dealer, Dealer> {
 
@@ -18,6 +20,7 @@ public class CreateDealerCallable extends BaseMateMonkeyCreateCallable<Dealer, D
   /**
    *
    * @param dealer
+   *    the dealer to create
    */
   public CreateDealerCallable(Dealer dealer) {
     super(Dealer.class, "/dealers");

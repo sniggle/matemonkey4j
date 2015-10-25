@@ -9,6 +9,8 @@ import java.net.URLConnection;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * Callable used to update a specific dealer
  */
 public class UpdateDealerCallable extends BaseMateMonkeyUpdateCallable<Dealer, Dealer> {
 
@@ -17,6 +19,7 @@ public class UpdateDealerCallable extends BaseMateMonkeyUpdateCallable<Dealer, D
   /**
    *
    * @param dealer
+   *    the dealer to update
    */
   public UpdateDealerCallable(Dealer dealer) {
     super(Dealer.class, "/dealers/:id");

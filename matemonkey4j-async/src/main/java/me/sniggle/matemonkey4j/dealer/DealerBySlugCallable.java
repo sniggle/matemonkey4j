@@ -5,6 +5,8 @@ import me.sniggle.matemonkey4j.api.model.Dealer;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * Callable to query for a specific dealer by slug
  */
 public class DealerBySlugCallable extends BaseMateMonkeyCallable<Void, Dealer> {
 
@@ -13,6 +15,7 @@ public class DealerBySlugCallable extends BaseMateMonkeyCallable<Void, Dealer> {
   /**
    *
    * @param slug
+   *    the slug name
    */
   public DealerBySlugCallable(String slug) {
     super(Dealer.class, "/dealers/slug/:slug");

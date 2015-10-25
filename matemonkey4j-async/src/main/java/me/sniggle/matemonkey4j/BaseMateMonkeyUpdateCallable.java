@@ -6,15 +6,22 @@ import java.net.URLConnection;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * performs a PUT request to the API
+ *
  * @param <Body>
+ *    the type we sent as request body
  * @param <Response>
+ *    the type we expect as response
  */
 public abstract class BaseMateMonkeyUpdateCallable<Body, Response> extends BaseMateMonkeyCallable<Body, Response> {
 
   /**
    *
    * @param restCallResult
+   *    the class of the expected response
    * @param path
+   *    the path of the API to query
    */
   protected BaseMateMonkeyUpdateCallable(Class<Response> restCallResult, String path) {
     super(restCallResult, path);

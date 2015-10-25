@@ -13,8 +13,13 @@ import java.util.concurrent.Callable;
 
 /**
  * @author tuxbox, sniggle.me
+ *
+ * the base callable class to unify API querying
+ *
  * @param <Body>
+ *    the type we sent as request body
  * @param <Response>
+ *    the type we expect as response
  */
 public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable<Response> {
 
@@ -32,7 +37,9 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
   /**
    *
    * @param restCallResult
+   *    the class of the expected response
    * @param path
+   *    the path of the API to query
    */
   protected BaseMateMonkeyCallable(Class<Response> restCallResult, String path) {
     super();
@@ -42,7 +49,7 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
 
   /**
    *
-   * @return
+   * @return the object mapper for object (de)serialization
    */
   protected ObjectMapper getObjectMapper() {
     return objectMapper;
@@ -50,15 +57,16 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
 
   /**
    *
-   * @return
+   * @return the path segment of the API to query
    */
   protected String getPath() {
     return path;
   }
 
   /**
+   * resolves the path and replaces variables in the base path
    *
-   * @return
+   * @return the actual path with resolved parameters
    */
   protected String resolvePath() {
     return path;
@@ -66,15 +74,17 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
 
   /**
    *
-   * @return
+   * @return the message body to serialize
    */
   protected Body getBody() {
     return null;
   }
 
   /**
+   * validates the
    *
    * @param body
+   *    the body to validate whether it meets basic requirements of the API
    * @throws IOException
    */
   protected void validateBody(Body body) throws IOException {
@@ -82,9 +92,11 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
   }
 
   /**
+   * prepares the API call, by validating and setting the user agent
    *
    * @param body
-   * @return
+   *    the body to sent with the request as body
+   * @return the prepared URL connection
    * @throws IOException
    */
   protected URLConnection prepareCall(Body body) throws IOException {
@@ -96,9 +108,11 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
   }
 
   /**
+   * processes the request
    *
    * @param connection
-   * @return
+   *    the connection of the request to process
+   * @return true if the response code matches the expected response code
    * @throws IOException
    */
   protected boolean processCall(URLConnection connection) throws IOException {
@@ -109,7 +123,8 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
   /**
    *
    * @param connection
-   * @return
+   *    the connection to handle
+   * @return the input stream containing the response
    * @throws IOException
    */
   protected InputStream postProcessCall(URLConnection connection) throws IOException {
@@ -118,7 +133,7 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
 
   /**
    *
-   * @return
+   * @return the base API url to use
    */
   public String getBaseUrl() {
     return baseUrl;
@@ -127,11 +142,17 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
   /**
    *
    * @param baseUrl
+   *    the base url to use
    */
   public void setBaseUrl(String baseUrl) {
     this.baseUrl = baseUrl;
   }
 
+  /**
+   * performs the API call
+   * @return
+   * @throws Exception
+   */
   @Override
   public Response call() throws Exception {
     Response result = null;

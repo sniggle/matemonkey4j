@@ -36,8 +36,8 @@ public class ProducerResultBindingTest extends BaseAPIResultBindingTest<Producer
     assertEquals("Germany", address.getCountry());
     assertEquals("Münchsteinach", address.getCity());
     assertEquals("91481", address.getPostal());
-    assertEquals(49.64104, address.getLat(), 0.0);
-    assertEquals(10.59215, address.getLon(), 0.0);
+    assertEquals(49.64104, address.getLatitude(), 0.0);
+    assertEquals(10.59215, address.getLongitude(), 0.0);
     assertEquals("http://www.clubmate.de/", address.getWeb());
     assertEquals("info@club-mate.de", address.getEmail());
     assertEquals("+49(0)9166607", address.getPhone());

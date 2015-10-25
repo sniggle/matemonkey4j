@@ -38,8 +38,8 @@ public class DealersResultBindingTest extends BaseAPIResultBindingTest<DealerRes
     assertEquals("Hannover", address.getCity());
     assertEquals("Germany", address.getCountry());
     assertNull(address.getEmail());
-    assertEquals(52.3761, address.getLat(), 0.0);
-    assertEquals(9.70221, address.getLon(), 0.0);
+    assertEquals(52.3761, address.getLatitude(), 0.0);
+    assertEquals(9.70221, address.getLongitude(), 0.0);
     assertEquals("33", address.getNumber());
     assertEquals("", address.getPhone());
     assertEquals("Erderstraße", address.getStreet());

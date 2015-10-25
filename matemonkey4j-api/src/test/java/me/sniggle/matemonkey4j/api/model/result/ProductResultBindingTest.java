@@ -51,8 +51,8 @@ public class ProductResultBindingTest extends BaseAPIResultBindingTest<ProductRe
     assertEquals("20146", address.getPostal());
     assertEquals("Papendamm", address.getStreet());
     assertEquals("http://www.1337mate.com/", address.getWeb());
-    assertEquals(53.56612, address.getLat(), 0.0);
-    assertEquals(9.9755, address.getLon(), 0.0);
+    assertEquals(53.56612, address.getLatitude(), 0.0);
+    assertEquals(9.9755, address.getLongitude(), 0.0);
   }
 
 }

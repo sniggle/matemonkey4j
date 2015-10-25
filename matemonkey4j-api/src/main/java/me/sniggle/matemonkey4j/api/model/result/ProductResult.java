@@ -19,7 +19,7 @@ public class ProductResult {
 
   /**
    *
-   * @return
+   * @return the element count in products
    */
   public long getCount() {
     return count;
@@ -28,6 +28,7 @@ public class ProductResult {
   /**
    *
    * @param count
+   *    the element count in products
    */
   public void setCount(long count) {
     this.count = count;
@@ -35,7 +36,7 @@ public class ProductResult {
 
   /**
    *
-   * @return
+   * @return the products in the result
    */
   public List<Product> getProducts() {
     return products;
@@ -44,6 +45,7 @@ public class ProductResult {
   /**
    *
    * @param products
+   *    the products in the result
    */
   public void setProducts(List<Product> products) {
     this.products = products;

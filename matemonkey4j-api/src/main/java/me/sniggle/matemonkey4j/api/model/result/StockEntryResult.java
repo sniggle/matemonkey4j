@@ -19,7 +19,7 @@ public class StockEntryResult {
 
   /**
    *
-   * @return
+   * @return the element count in entries
    */
   public long getCount() {
     return count;
@@ -28,6 +28,7 @@ public class StockEntryResult {
   /**
    *
    * @param count
+   *    the element count in entries
    */
   public void setCount(long count) {
     this.count = count;
@@ -35,7 +36,7 @@ public class StockEntryResult {
 
   /**
    *
-   * @return
+   * @return the stock entries
    */
   public List<StockEntry> getEntries() {
     return entries;
@@ -44,6 +45,7 @@ public class StockEntryResult {
   /**
    *
    * @param entries
+   *    the stock entries
    */
   public void setEntries(List<StockEntry> entries) {
     this.entries = entries;

@@ -17,18 +17,36 @@ public class ProducerResult {
   public ProducerResult() {
   }
 
+  /**
+   *
+   * @return the element count in producers
+   */
   public long getCount() {
     return count;
   }
 
+  /**
+   *
+   * @param count
+   *    the element count in producers
+   */
   public void setCount(long count) {
     this.count = count;
   }
 
+  /**
+   *
+   * @return the mate producers
+   */
   public List<Producer> getProducers() {
     return producers;
   }
 
+  /**
+   *
+   * @param producers
+   *    the mate producers in the result
+   */
   public void setProducers(List<Producer> producers) {
     this.producers = producers;
   }

@@ -22,7 +22,7 @@ public class GeoLocation {
 
   /**
    *
-   * @return
+   * @return the type of the search result ("GeoLocation")
    */
   public String getType() {
     return type;
@@ -31,6 +31,7 @@ public class GeoLocation {
   /**
    *
    * @param type
+   *    the type of the search result
    */
   public void setType(String type) {
     this.type = type;
@@ -38,7 +39,7 @@ public class GeoLocation {
 
   /**
    *
-   * @return
+   * @return the latitude of the GeoLocation
    */
   public double getLatitude() {
     return latitude;
@@ -47,6 +48,7 @@ public class GeoLocation {
   /**
    *
    * @param latitude
+   *    the latitude of the GeoLocation
    */
   public void setLatitude(double latitude) {
     this.latitude = latitude;
@@ -54,7 +56,7 @@ public class GeoLocation {
 
   /**
    *
-   * @return
+   * @return the longitude of the GeoLocation
    */
   public double getLongitude() {
     return longitude;
@@ -63,6 +65,7 @@ public class GeoLocation {
   /**
    *
    * @param longitude
+   *    the longitude of the GeoLocation
    */
   public void setLongitude(double longitude) {
     this.longitude = longitude;

@@ -7,8 +7,6 @@ import java.util.List;
 
 /**
  * @author tuxbox, sniggle.me
- *
- *
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class DealerResult {
@@ -21,7 +19,7 @@ public class DealerResult {
 
   /**
    *
-   * @return
+   * @return the element count in dealers
    */
   public long getCount() {
     return count;
@@ -30,6 +28,7 @@ public class DealerResult {
   /**
    *
    * @param count
+   *    the element count of dealers
    */
   public void setCount(long count) {
     this.count = count;
@@ -37,7 +36,7 @@ public class DealerResult {
 
   /**
    *
-   * @return
+   * @return the dealers in the result
    */
   public List<Dealer> getDealers() {
     return dealers;
@@ -46,6 +45,7 @@ public class DealerResult {
   /**
    *
    * @param dealers
+   *    the dealers
    */
   public void setDealers(List<Dealer> dealers) {
     this.dealers = dealers;

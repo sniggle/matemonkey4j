@@ -1,5 +1,6 @@
 package me.sniggle.matemonkey4j.api.model.result;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import me.sniggle.matemonkey4j.api.model.StockEntry;
 
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.List;
 /**
  * Created by iulius on 22/10/15.
  */
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class StockEntryResult {
 
   private long count;

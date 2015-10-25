@@ -1,8 +1,11 @@
 package me.sniggle.matemonkey4j.api.model.geo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * Created by iulius on 23/10/15.
  */
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class GeoLocation {
 
   private String type;

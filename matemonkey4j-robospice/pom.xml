@@ -11,5 +11,22 @@
 
   <artifactId>matemonkey4j-impl</artifactId>
 
+  <dependencies>
+    <dependency>
+      <groupId>me.sniggle</groupId>
+      <artifactId>matemonkey4j-api</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>me.sniggle</groupId>
+      <artifactId>matemonkey4j-async</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.octo.android.robospice</groupId>
+      <artifactId>robospice</artifactId>
+      <version>1.4.14</version>
+    </dependency>
+  </dependencies>
 
 </project>

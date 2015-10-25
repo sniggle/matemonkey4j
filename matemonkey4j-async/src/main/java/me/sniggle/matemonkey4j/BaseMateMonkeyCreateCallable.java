@@ -5,10 +5,17 @@ import java.net.HttpURLConnection;
 import java.net.URLConnection;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
+ * @param <Body>
+ * @param <Response>
  */
 public abstract class BaseMateMonkeyCreateCallable<Body, Response> extends BaseMateMonkeyCallable<Body, Response> {
 
+  /**
+   *
+   * @param restCallResult
+   * @param path
+   */
   protected BaseMateMonkeyCreateCallable(Class<Response> restCallResult, String path) {
     super(restCallResult, path);
   }

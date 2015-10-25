@@ -6,7 +6,7 @@ import me.sniggle.matemonkey4j.api.model.Product;
 import java.util.List;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ProductResult {
@@ -17,18 +17,34 @@ public class ProductResult {
   public ProductResult() {
   }
 
+  /**
+   *
+   * @return
+   */
   public long getCount() {
     return count;
   }
 
+  /**
+   *
+   * @param count
+   */
   public void setCount(long count) {
     this.count = count;
   }
 
+  /**
+   *
+   * @return
+   */
   public List<Product> getProducts() {
     return products;
   }
 
+  /**
+   *
+   * @param products
+   */
   public void setProducts(List<Product> products) {
     this.products = products;
   }

@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class StockByDealerIdCallableTest extends BaseCallableTest {
 

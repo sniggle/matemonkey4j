@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class DealerBySlugCallableTest extends GetDealerByCallableTest {
 

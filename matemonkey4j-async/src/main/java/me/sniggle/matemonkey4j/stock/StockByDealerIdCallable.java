@@ -6,17 +6,26 @@ import me.sniggle.matemonkey4j.api.model.result.StockEntryResult;
 import java.util.Map;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class StockByDealerIdCallable extends BaseMateMonkeyCallable<Void, StockEntryResult> {
 
   private final long dealerId;
   private final boolean current;
 
+  /**
+   *
+   * @param dealerId
+   */
   public StockByDealerIdCallable(long dealerId) {
     this(dealerId, true);
   }
 
+  /**
+   *
+   * @param dealerId
+   * @param current
+   */
   public StockByDealerIdCallable(long dealerId, boolean current) {
     super(StockEntryResult.class, "/dealers/:id/stock");
     this.dealerId = dealerId;

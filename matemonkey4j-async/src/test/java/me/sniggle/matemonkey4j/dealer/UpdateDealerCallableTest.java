@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class UpdateDealerCallableTest extends BaseCallableTest {
 
@@ -19,7 +19,6 @@ public class UpdateDealerCallableTest extends BaseCallableTest {
 
   @Before
   public void setup() {
-    //{"name":"Brausedealer","id":1,"type":"retail","note":"","slug":"brausedealer","created_at":"2015-05-20T09:19:21+00:00","updated_at":"2015-05-20T23:49:17+00:00","address":{"street":"ErderstraÃŸe","number":"33","country":"Germany","city":"Hannover","postal":"30451","lat":52.3761,"lon":9.70221,"web":"","email":null,"phone":""},"currency":"EUR"}
     Dealer dealer = new Dealer();
     dealer.setId(1);
     dealer.setName("Brausedealer - TEST Update");

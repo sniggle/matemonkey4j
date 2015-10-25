@@ -7,16 +7,23 @@ import me.sniggle.matemonkey4j.api.query.Query;
 import java.util.Map;
 
 /**
- * Created by iulius on 24/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class DealersCallable extends BaseMateMonkeyCallable<Void, DealerResult> {
 
   private final Query query;
 
+  /**
+   *
+   */
   public DealersCallable() {
     this(null);
   }
 
+  /**
+   *
+   * @param query
+   */
   public DealersCallable(Query query) {
     super(DealerResult.class, "/dealers");
     this.query = query;

@@ -4,21 +4,34 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class SearchQueryBuilder implements Query {
 
   private String searchTerm;
 
+  /**
+   *
+   * @return
+   */
   public static SearchQueryBuilder create() {
     return new SearchQueryBuilder();
   }
 
+  /**
+   *
+   * @param searchTerm
+   * @return
+   */
   public SearchQueryBuilder searchTerm(String searchTerm) {
     this.searchTerm = searchTerm;
     return this;
   }
 
+  /**
+   *
+   * @return
+   */
   public Query build() {
     return this;
   }

@@ -6,7 +6,7 @@ import me.sniggle.matemonkey4j.api.model.StockEntry;
 import java.util.List;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class StockEntryResult {
@@ -17,18 +17,34 @@ public class StockEntryResult {
   public StockEntryResult() {
   }
 
+  /**
+   *
+   * @return
+   */
   public long getCount() {
     return count;
   }
 
+  /**
+   *
+   * @param count
+   */
   public void setCount(long count) {
     this.count = count;
   }
 
+  /**
+   *
+   * @return
+   */
   public List<StockEntry> getEntries() {
     return entries;
   }
 
+  /**
+   *
+   * @param entries
+   */
   public void setEntries(List<StockEntry> entries) {
     this.entries = entries;
   }

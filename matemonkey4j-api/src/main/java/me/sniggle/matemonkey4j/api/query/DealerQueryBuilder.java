@@ -6,10 +6,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public final class DealerQueryBuilder implements Query {
 
+  /**
+   * @author tuxbox, sniggle.me
+   */
   private class BBox implements Query {
 
     private final double latitudeLeft;
@@ -40,10 +43,22 @@ public final class DealerQueryBuilder implements Query {
     super();
   }
 
+  /**
+   *
+   * @return
+   */
   public static DealerQueryBuilder create() {
     return new DealerQueryBuilder();
   }
 
+  /**
+   *
+   * @param latitudeLeft
+   * @param longitudeBottom
+   * @param latitudeRight
+   * @param longitudeTop
+   * @return
+   */
   public DealerQueryBuilder bbox(double latitudeLeft, double longitudeBottom, double latitudeRight, double longitudeTop) {
     if( latitudeLeft > 90.0 || latitudeLeft < -90.0 || latitudeRight > 90.0 || latitudeRight < -90.0 ) {
       throw new IllegalArgumentException("Latitudes must be between -90.0 <= latitude <= 90.0, but was latitudeLeft: " + latitudeLeft + " and latitudeRight: " + latitudeRight);
@@ -55,6 +70,11 @@ public final class DealerQueryBuilder implements Query {
     return this;
   }
 
+  /**
+   *
+   * @param dealerType
+   * @return
+   */
   public DealerQueryBuilder addDealerType(DealerType dealerType) {
     if( dealerType != null ) {
       dealerTypes.add(dealerType);
@@ -62,6 +82,11 @@ public final class DealerQueryBuilder implements Query {
     return this;
   }
 
+  /**
+   *
+   * @param productId
+   * @return
+   */
   public DealerQueryBuilder addProductId(String productId) {
     if( productId != null && !productId.trim().isEmpty()) {
       productIds.add(productId);
@@ -69,6 +94,10 @@ public final class DealerQueryBuilder implements Query {
     return this;
   }
 
+  /**
+   *
+   * @return
+   */
   public Query build() {
     return this;
   }

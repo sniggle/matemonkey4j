@@ -4,12 +4,16 @@ import me.sniggle.matemonkey4j.BaseMateMonkeyCallable;
 import me.sniggle.matemonkey4j.api.model.Dealer;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class DealerByIdCallable extends BaseMateMonkeyCallable<Void, Dealer> {
 
   private final long id;
 
+  /**
+   *
+   * @param id
+   */
   public DealerByIdCallable(long id) {
     super(Dealer.class, "/dealers/:id");
     this.id = id;

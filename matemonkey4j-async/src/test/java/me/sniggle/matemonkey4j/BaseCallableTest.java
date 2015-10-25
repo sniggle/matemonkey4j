@@ -1,7 +1,7 @@
 package me.sniggle.matemonkey4j;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class BaseCallableTest {
 

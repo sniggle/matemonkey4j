@@ -14,8 +14,8 @@
 
   <modules>
     <module>matemonkey4j-api</module>
-    <module>matemonkey4j-impl</module>
     <module>matemonkey4j-async</module>
+    <module>matemonkey4j-robospice</module>
   </modules>
 
 

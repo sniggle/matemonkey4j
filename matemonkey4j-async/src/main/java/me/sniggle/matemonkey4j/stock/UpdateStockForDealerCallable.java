@@ -10,13 +10,18 @@ import java.net.HttpURLConnection;
 import java.net.URLConnection;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class UpdateStockForDealerCallable extends BaseMateMonkeyCreateCallable<StockUpdate, Void> {
 
   private final StockUpdate stockUpdate;
   private final Dealer dealer;
 
+  /**
+   *
+   * @param dealer
+   * @param stockUpdate
+   */
   public UpdateStockForDealerCallable(Dealer dealer, StockUpdate stockUpdate) {
     super(Void.class, "/dealers/:id/stock");
     this.dealer = dealer;

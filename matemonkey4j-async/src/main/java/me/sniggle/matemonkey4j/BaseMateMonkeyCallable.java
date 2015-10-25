@@ -12,7 +12,9 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 
 /**
- * Created by iulius on 24/10/15.
+ * @author tuxbox, sniggle.me
+ * @param <Body>
+ * @param <Response>
  */
 public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable<Response> {
 
@@ -27,32 +29,64 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
   private final Class<Response> restCallResult;
   private String baseUrl = BASE_URL;
 
+  /**
+   *
+   * @param restCallResult
+   * @param path
+   */
   protected BaseMateMonkeyCallable(Class<Response> restCallResult, String path) {
     super();
     this.restCallResult = restCallResult;
     this.path = path;
   }
 
+  /**
+   *
+   * @return
+   */
   protected ObjectMapper getObjectMapper() {
     return objectMapper;
   }
 
+  /**
+   *
+   * @return
+   */
   protected String getPath() {
     return path;
   }
 
+  /**
+   *
+   * @return
+   */
   protected String resolvePath() {
     return path;
   }
 
+  /**
+   *
+   * @return
+   */
   protected Body getBody() {
     return null;
   }
 
+  /**
+   *
+   * @param body
+   * @throws IOException
+   */
   protected void validateBody(Body body) throws IOException {
 
   }
 
+  /**
+   *
+   * @param body
+   * @return
+   * @throws IOException
+   */
   protected URLConnection prepareCall(Body body) throws IOException {
     validateBody(body);
     URL url = new URL(getBaseUrl() + API_VERSION + resolvePath());
@@ -61,19 +95,39 @@ public abstract class BaseMateMonkeyCallable<Body, Response> implements Callable
     return connection;
   }
 
+  /**
+   *
+   * @param connection
+   * @return
+   * @throws IOException
+   */
   protected boolean processCall(URLConnection connection) throws IOException {
     int responseCode = ((HttpURLConnection)connection).getResponseCode();
     return  responseCode == 200;
   }
 
+  /**
+   *
+   * @param connection
+   * @return
+   * @throws IOException
+   */
   protected InputStream postProcessCall(URLConnection connection) throws IOException {
     return connection.getInputStream();
   }
 
+  /**
+   *
+   * @return
+   */
   public String getBaseUrl() {
     return baseUrl;
   }
 
+  /**
+   *
+   * @param baseUrl
+   */
   public void setBaseUrl(String baseUrl) {
     this.baseUrl = baseUrl;
   }

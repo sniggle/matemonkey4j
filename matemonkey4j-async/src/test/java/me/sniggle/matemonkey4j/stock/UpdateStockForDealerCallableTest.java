@@ -10,7 +10,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class UpdateStockForDealerCallableTest extends BaseCallableTest {
 
@@ -33,8 +33,6 @@ public class UpdateStockForDealerCallableTest extends BaseCallableTest {
   @Test
   public void testCall() throws Exception {
     fail("update via api fails currently");
-    //Void stockEntry = updateStockCallable.call();
-    //assertNotNull(stockEntry);
   }
 
   @After

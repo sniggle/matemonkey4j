@@ -6,7 +6,7 @@ import me.sniggle.matemonkey4j.api.model.Producer;
 import java.util.List;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ProducerResult {

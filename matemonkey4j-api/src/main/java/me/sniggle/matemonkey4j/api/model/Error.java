@@ -3,7 +3,7 @@ package me.sniggle.matemonkey4j.api.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Error {
@@ -14,18 +14,34 @@ public class Error {
   public Error() {
   }
 
+  /**
+   *
+   * @return
+   */
   public String getTitle() {
     return title;
   }
 
+  /**
+   *
+   * @param title
+   */
   public void setTitle(String title) {
     this.title = title;
   }
 
+  /**
+   *
+   * @return
+   */
   public String[] getMessages() {
     return messages;
   }
 
+  /**
+   *
+   * @param messages
+   */
   public void setMessages(String[] messages) {
     this.messages = messages;
   }

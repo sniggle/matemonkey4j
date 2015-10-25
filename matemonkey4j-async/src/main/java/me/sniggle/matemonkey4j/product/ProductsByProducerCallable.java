@@ -7,12 +7,16 @@ import me.sniggle.matemonkey4j.api.model.result.ProductResult;
 import java.util.Map;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class ProductsByProducerCallable extends BaseMateMonkeyCallable<Void, ProductResult> {
 
   private final String id;
 
+  /**
+   *
+   * @param id
+   */
   public ProductsByProducerCallable(String id) {
     super(ProductResult.class, "/producers/:id/products");
     this.id = id;

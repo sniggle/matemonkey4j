@@ -10,7 +10,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class GetDealerByCallableTest extends BaseCallableTest {
 
@@ -33,8 +33,8 @@ public class GetDealerByCallableTest extends BaseCallableTest {
     assertEquals("München", address.getCity());
     assertEquals("7", address.getNumber());
     assertEquals("Kanalstr.", address.getStreet());
-    assertEquals(48.1351847, address.getLat(), 0.0);
-    assertEquals(11.5839644, address.getLon(), 0.0);
+    assertEquals(48.1351847, address.getLatitude(), 0.0);
+    assertEquals(11.5839644, address.getLongitude(), 0.0);
   }
 
 }

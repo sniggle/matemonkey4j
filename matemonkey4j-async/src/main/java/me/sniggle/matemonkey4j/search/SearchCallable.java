@@ -4,15 +4,17 @@ import me.sniggle.matemonkey4j.BaseMateMonkeyCallable;
 import me.sniggle.matemonkey4j.api.model.geo.GeoLocation;
 import me.sniggle.matemonkey4j.api.query.Query;
 
-import java.util.Map;
-
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class SearchCallable extends BaseMateMonkeyCallable<Void, GeoLocation> {
 
   private final Query query;
 
+  /**
+   *
+   * @param query
+   */
   public SearchCallable(Query query) {
     super(GeoLocation.class, "/search");
     this.query = query;

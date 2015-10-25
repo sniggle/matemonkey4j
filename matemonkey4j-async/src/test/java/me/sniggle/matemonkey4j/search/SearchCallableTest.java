@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class SearchCallableTest extends BaseCallableTest {
 
@@ -27,8 +27,8 @@ public class SearchCallableTest extends BaseCallableTest {
     GeoLocation result = searchCallable.call();
     assertNotNull(result);
     assertEquals("GeoLocation", result.getType());
-    assertEquals(50.9383611, result.getLat(), 0.0);
-    assertEquals(6.9599738, result.getLon(), 0.0);
+    assertEquals(50.9383611, result.getLatitude(), 0.0);
+    assertEquals(6.9599738, result.getLongitude(), 0.0);
   }
 
   public void cleanUp() {

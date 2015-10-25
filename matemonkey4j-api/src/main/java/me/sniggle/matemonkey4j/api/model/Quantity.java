@@ -3,7 +3,7 @@ package me.sniggle.matemonkey4j.api.model;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 public enum Quantity {
 
@@ -16,6 +16,10 @@ public enum Quantity {
     this.quantity = quantity;
   }
 
+  /**
+   *
+   * @return
+   */
   @JsonValue
   public String quantity() {
     return quantity;

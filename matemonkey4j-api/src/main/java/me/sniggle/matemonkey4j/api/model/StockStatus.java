@@ -3,7 +3,7 @@ package me.sniggle.matemonkey4j.api.model;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 public enum StockStatus {
 
@@ -18,6 +18,10 @@ public enum StockStatus {
     this.status = status;
   }
 
+  /**
+   *
+   * @return
+   */
   @JsonValue
   public String status() {
     return status;

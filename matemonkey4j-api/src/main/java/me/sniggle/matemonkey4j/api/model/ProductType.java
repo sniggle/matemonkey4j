@@ -3,7 +3,7 @@ package me.sniggle.matemonkey4j.api.model;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Created by iulius on 22/10/15.
+ * @author tuxbox, sniggle.me
  */
 public enum ProductType {
 
@@ -19,6 +19,10 @@ public enum ProductType {
     this.id = id;
   }
 
+  /**
+   *
+   * @return
+   */
   @JsonValue
   public String id() {
     return id;

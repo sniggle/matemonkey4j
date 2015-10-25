@@ -9,12 +9,16 @@ import java.net.HttpURLConnection;
 import java.net.URLConnection;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class CreateDealerCallable extends BaseMateMonkeyCreateCallable<Dealer, Dealer> {
 
   private Dealer dealer;
 
+  /**
+   *
+   * @param dealer
+   */
   public CreateDealerCallable(Dealer dealer) {
     super(Dealer.class, "/dealers");
     this.dealer = dealer;

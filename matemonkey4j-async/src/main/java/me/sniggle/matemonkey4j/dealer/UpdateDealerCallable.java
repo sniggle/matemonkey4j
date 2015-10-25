@@ -1,9 +1,5 @@
 package me.sniggle.matemonkey4j.dealer;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.SerializationConfig;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import me.sniggle.matemonkey4j.BaseMateMonkeyUpdateCallable;
 import me.sniggle.matemonkey4j.api.model.Dealer;
 
@@ -12,12 +8,16 @@ import java.net.HttpURLConnection;
 import java.net.URLConnection;
 
 /**
- * Created by iulius on 25/10/15.
+ * @author tuxbox, sniggle.me
  */
 public class UpdateDealerCallable extends BaseMateMonkeyUpdateCallable<Dealer, Dealer> {
 
   private final Dealer dealer;
 
+  /**
+   *
+   * @param dealer
+   */
   public UpdateDealerCallable(Dealer dealer) {
     super(Dealer.class, "/dealers/:id");
     this.dealer = dealer;

@@ -17,7 +17,7 @@ public class ProductsByProducerCallableTest {
 
   @Before
   public void setup() {
-    productsCallable = new ProductsByProducerCallable("1");
+    productsCallable = new ProductsByProducerCallable(1);
   }
 
   @Test

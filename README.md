@@ -7,6 +7,7 @@ The only dependency is on Jackson in order to (de)serialize API requests and res
 
 ## Status
 [![Build Status](https://travis-ci.org/tuxbox/matemonkey4j.png?branch=master)](https://travis-ci.org/tuxbox/matemonkey4j)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/6767/badge.svg)](https://scan.coverity.com/projects/tuxbox-matemonkey4j)
 
 ## License
 Short version: 3-clause BSD

@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author tuxbox, sniggle.me
@@ -27,9 +28,10 @@ public class StockByDealerIdCallableTest extends BaseCallableTest {
   public void testCall() throws Exception {
     StockEntryResult result = stockCallable.call();
     assertNotNull(result);
-    assertEquals(2, result.getCount());
+    assertTrue(result.getCount() >= 2);
     assertNotNull(result.getEntries());
-    assertEquals(2, result.getEntries().size());
+    assertTrue(result.getEntries().size() >= 2);
+    assertEquals(result.getCount(), result.getEntries().size());
   }
 
   @After

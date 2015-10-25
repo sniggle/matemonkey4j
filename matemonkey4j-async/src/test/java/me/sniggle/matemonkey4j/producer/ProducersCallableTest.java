@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author tuxbox, sniggle.me
@@ -26,9 +27,10 @@ public class ProducersCallableTest extends BaseCallableTest {
   public void testCall() throws Exception {
     ProducerResult result = producersCallable.call();
     assertNotNull(result);
-    assertEquals(17, result.getCount());
+    assertTrue(result.getCount() >= 17);
     assertNotNull(result.getProducers());
-    assertEquals(17, result.getProducers().size());
+    assertTrue(result.getProducers().size() >= 17);
+    assertEquals(result.getCount(), result.getProducers().size());
   }
 
   @After

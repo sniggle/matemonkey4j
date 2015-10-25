@@ -11,6 +11,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author tuxbox, sniggle.me
@@ -37,9 +38,10 @@ public class DealerCallableQueryTest extends BaseCallableTest {
   public void testCall() throws Exception {
     DealerResult result = dealersCallable.call();
     assertNotNull(result);
-    assertEquals(92, result.getCount());
+    assertTrue(result.getCount() >= 92);
     assertNotNull(result.getDealers());
-    assertEquals(92, result.getDealers().size());
+    assertTrue(result.getDealers().size() >= 92);
+    assertEquals(result.getCount(), result.getDealers().size());
   }
 
   @After

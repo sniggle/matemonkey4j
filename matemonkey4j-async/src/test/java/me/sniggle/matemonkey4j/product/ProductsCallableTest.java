@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author tuxbox, sniggle.me
@@ -24,9 +25,10 @@ public class ProductsCallableTest {
   public void testCall() throws Exception {
     ProductResult productResult = productsCallable.call();
     assertNotNull(productResult);
-    assertEquals(44, productResult.getCount());
+    assertTrue(productResult.getCount() >= 44);
     assertNotNull(productResult.getProducts());
-    assertEquals(44, productResult.getProducts().size());
+    assertTrue(productResult.getProducts().size() >= 44);
+    assertEquals(productResult.getCount(), productResult.getProducts().size());
   }
 
   @After

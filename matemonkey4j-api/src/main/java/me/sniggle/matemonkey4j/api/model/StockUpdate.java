@@ -19,7 +19,7 @@ public class StockUpdate {
 
   /**
    *
-   * @return
+   * @return the internal ID
    */
   public long getProductId() {
     return productId;
@@ -28,6 +28,7 @@ public class StockUpdate {
   /**
    *
    * @param productId
+   *    the internal ID
    */
   public void setProductId(long productId) {
     this.productId = productId;
@@ -35,7 +36,7 @@ public class StockUpdate {
 
   /**
    *
-   * @return
+   * @return the status to set
    */
   public StockStatus getStatus() {
     return status;
@@ -44,6 +45,7 @@ public class StockUpdate {
   /**
    *
    * @param status
+   *    the status to set
    */
   public void setStatus(StockStatus status) {
     this.status = status;
@@ -51,7 +53,7 @@ public class StockUpdate {
 
   /**
    *
-   * @return
+   * @return the available quantity
    */
   public Quantity getQuantity() {
     return quantity;
@@ -60,6 +62,7 @@ public class StockUpdate {
   /**
    *
    * @param quantity
+   *    the available quantity
    */
   public void setQuantity(Quantity quantity) {
     this.quantity = quantity;
@@ -67,7 +70,7 @@ public class StockUpdate {
 
   /**
    *
-   * @return
+   * @return the price
    */
   public int getPrice() {
     return price;
@@ -76,6 +79,7 @@ public class StockUpdate {
   /**
    *
    * @param price
+   *    the price
    */
   public void setPrice(int price) {
     this.price = price;
@@ -83,7 +87,7 @@ public class StockUpdate {
 
   /**
    *
-   * @return
+   * @return true if it's a special offer
    */
   public boolean isSpecial() {
     return special;
@@ -92,6 +96,7 @@ public class StockUpdate {
   /**
    *
    * @param special
+   *    true if it's a special offer
    */
   public void setSpecial(boolean special) {
     this.special = special;

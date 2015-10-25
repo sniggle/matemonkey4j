@@ -22,7 +22,7 @@ public class StockEntry {
 
   /**
    *
-   * @return
+   * @return the stock status
    */
   public StockStatus getStatus() {
     return status;
@@ -31,6 +31,7 @@ public class StockEntry {
   /**
    *
    * @param status
+   *    the stock status
    */
   public void setStatus(StockStatus status) {
     this.status = status;
@@ -38,7 +39,7 @@ public class StockEntry {
 
   /**
    *
-   * @return
+   * @return the related product
    */
   public Product getProduct() {
     return product;
@@ -47,6 +48,7 @@ public class StockEntry {
   /**
    *
    * @param product
+   *    the related product
    */
   public void setProduct(Product product) {
     this.product = product;
@@ -54,7 +56,7 @@ public class StockEntry {
 
   /**
    *
-   * @return
+   * @return the price
    */
   public String getPrice() {
     return price;
@@ -63,6 +65,7 @@ public class StockEntry {
   /**
    *
    * @param price
+   *    the price
    */
   public void setPrice(String price) {
     this.price = price;
@@ -70,7 +73,7 @@ public class StockEntry {
 
   /**
    *
-   * @return
+   * @return the available quantity
    */
   public Quantity getQuantity() {
     return quantity;
@@ -79,6 +82,7 @@ public class StockEntry {
   /**
    *
    * @param quantity
+   *    the available quantity
    */
   public void setQuantity(Quantity quantity) {
     this.quantity = quantity;
@@ -86,7 +90,7 @@ public class StockEntry {
 
   /**
    *
-   * @return
+   * @return true if it's a special offer
    */
   public boolean isSpecial() {
     return special;
@@ -94,7 +98,7 @@ public class StockEntry {
 
   /**
    *
-   * @param special
+   * @param special true if it's a special offer
    */
   public void setSpecial(boolean special) {
     this.special = special;
@@ -102,7 +106,7 @@ public class StockEntry {
 
   /**
    *
-   * @return
+   * @return ISO 8601 formatted timestamp of creation
    */
   public String getCreatedAt() {
     return createdAt;
@@ -111,6 +115,7 @@ public class StockEntry {
   /**
    *
    * @param createdAt
+   *    ISO 8601 formatted timestamp of creation
    */
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;

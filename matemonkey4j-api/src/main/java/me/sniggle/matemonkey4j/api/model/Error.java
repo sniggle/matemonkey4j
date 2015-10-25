@@ -16,7 +16,7 @@ public class Error {
 
   /**
    *
-   * @return
+   * @return the title of the error message
    */
   public String getTitle() {
     return title;
@@ -25,6 +25,7 @@ public class Error {
   /**
    *
    * @param title
+   *    the title of the error message
    */
   public void setTitle(String title) {
     this.title = title;
@@ -32,7 +33,7 @@ public class Error {
 
   /**
    *
-   * @return
+   * @return the error messages
    */
   public String[] getMessages() {
     return messages;
@@ -41,6 +42,7 @@ public class Error {
   /**
    *
    * @param messages
+   *    the error messages
    */
   public void setMessages(String[] messages) {
     this.messages = messages;

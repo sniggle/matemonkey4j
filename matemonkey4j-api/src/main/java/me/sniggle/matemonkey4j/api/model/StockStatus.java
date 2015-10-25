@@ -20,7 +20,7 @@ public enum StockStatus {
 
   /**
    *
-   * @return
+   * @return the JSON string representation of the status
    */
   @JsonValue
   public String status() {

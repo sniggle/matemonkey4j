@@ -20,7 +20,7 @@ public class Producer {
 
   /**
    *
-   * @return
+   * @return the internal ID
    */
   public long getId() {
     return id;
@@ -29,6 +29,7 @@ public class Producer {
   /**
    *
    * @param id
+   *    the internal ID
    */
   public void setId(long id) {
     this.id = id;
@@ -36,7 +37,7 @@ public class Producer {
 
   /**
    *
-   * @return
+   * @return the name of the producer
    */
   public String getName() {
     return name;
@@ -45,6 +46,7 @@ public class Producer {
   /**
    *
    * @param name
+   *    the name of the producer
    */
   public void setName(String name) {
     this.name = name;
@@ -52,7 +54,7 @@ public class Producer {
 
   /**
    *
-   * @return
+   * @return the slug name
    */
   public String getSlug() {
     return slug;
@@ -61,6 +63,7 @@ public class Producer {
   /**
    *
    * @param slug
+   *    the slug name
    */
   public void setSlug(String slug) {
     this.slug = slug;
@@ -68,7 +71,7 @@ public class Producer {
 
   /**
    *
-   * @return
+   * @return the image url
    */
   public String getImage() {
     return image;
@@ -77,6 +80,7 @@ public class Producer {
   /**
    *
    * @param image
+   *    the image url
    */
   public void setImage(String image) {
     this.image = image;
@@ -84,7 +88,7 @@ public class Producer {
 
   /**
    *
-   * @return
+   * @return the description of the producer
    */
   public String getDescription() {
     return description;
@@ -93,6 +97,7 @@ public class Producer {
   /**
    *
    * @param description
+   *    the description of the producer
    */
   public void setDescription(String description) {
     this.description = description;
@@ -100,7 +105,7 @@ public class Producer {
 
   /**
    *
-   * @return
+   * @return the address of the producer
    */
   public Address getAddress() {
     return address;
@@ -109,6 +114,7 @@ public class Producer {
   /**
    *
    * @param address
+   *    the address of the producer
    */
   public void setAddress(Address address) {
     this.address = address;

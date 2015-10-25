@@ -21,7 +21,7 @@ public enum ProductType {
 
   /**
    *
-   * @return
+   * @return the JSON representation string of the product type
    */
   @JsonValue
   public String id() {

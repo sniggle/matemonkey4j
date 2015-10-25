@@ -27,7 +27,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the street name of the address
    */
   public String getStreet() {
     return street;
@@ -36,6 +36,7 @@ public class Address {
   /**
    *
    * @param street
+   *    the street name of the address
    */
   public void setStreet(String street) {
     this.street = street;
@@ -43,7 +44,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the house number
    */
   public String getNumber() {
     return number;
@@ -52,6 +53,7 @@ public class Address {
   /**
    *
    * @param number
+   *    the house number
    */
   public void setNumber(String number) {
     this.number = number;
@@ -59,7 +61,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the country's name
    */
   public String getCountry() {
     return country;
@@ -68,6 +70,7 @@ public class Address {
   /**
    *
    * @param country
+   *    the country's name
    */
   public void setCountry(String country) {
     this.country = country;
@@ -75,7 +78,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the city
    */
   public String getCity() {
     return city;
@@ -84,6 +87,7 @@ public class Address {
   /**
    *
    * @param city
+   *    the city
    */
   public void setCity(String city) {
     this.city = city;
@@ -91,7 +95,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the zip code
    */
   public String getPostal() {
     return postal;
@@ -100,6 +104,7 @@ public class Address {
   /**
    *
    * @param postal
+   *    the zip code
    */
   public void setPostal(String postal) {
     this.postal = postal;
@@ -107,7 +112,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the latitude of the address
    */
   public double getLatitude() {
     return latitude;
@@ -116,6 +121,7 @@ public class Address {
   /**
    *
    * @param latitude
+   *    the latitude of the address
    */
   public void setLatitude(double latitude) {
     this.latitude = latitude;
@@ -123,7 +129,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the longitude of the address
    */
   public double getLongitude() {
     return longitude;
@@ -132,6 +138,7 @@ public class Address {
   /**
    *
    * @param longitude
+   *    the longitude of the address
    */
   public void setLongitude(double longitude) {
     this.longitude = longitude;
@@ -139,7 +146,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the website url
    */
   public String getWeb() {
     return web;
@@ -148,6 +155,7 @@ public class Address {
   /**
    *
    * @param web
+   *    the website url
    */
   public void setWeb(String web) {
     this.web = web;
@@ -155,7 +163,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the email address
    */
   public String getEmail() {
     return email;
@@ -164,6 +172,7 @@ public class Address {
   /**
    *
    * @param email
+   *    the email address
    */
   public void setEmail(String email) {
     this.email = email;
@@ -171,7 +180,7 @@ public class Address {
 
   /**
    *
-   * @return
+   * @return the phone number
    */
   public String getPhone() {
     return phone;
@@ -180,6 +189,7 @@ public class Address {
   /**
    *
    * @param phone
+   *    the phone number
    */
   public void setPhone(String phone) {
     this.phone = phone;

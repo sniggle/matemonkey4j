@@ -26,7 +26,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the internal ID
    */
   public long getId() {
     return id;
@@ -35,6 +35,7 @@ public class Dealer {
   /**
    *
    * @param id
+   *    the internal ID
    */
   public void setId(long id) {
     this.id = id;
@@ -42,7 +43,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the common name of the dealer
    */
   public String getName() {
     return name;
@@ -51,6 +52,7 @@ public class Dealer {
   /**
    *
    * @param name
+   *    the common name of the dealer
    */
   public void setName(String name) {
     this.name = name;
@@ -58,7 +60,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the type of dealer
    */
   public DealerType getType() {
     return type;
@@ -67,6 +69,7 @@ public class Dealer {
   /**
    *
    * @param type
+   *    the type of dealer
    */
   public void setType(DealerType type) {
     this.type = type;
@@ -74,7 +77,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return a free text note
    */
   public String getNote() {
     return note;
@@ -83,6 +86,7 @@ public class Dealer {
   /**
    *
    * @param note
+   *    a free text note
    */
   public void setNote(String note) {
     this.note = note;
@@ -90,7 +94,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the slug name
    */
   public String getSlug() {
     return slug;
@@ -99,6 +103,7 @@ public class Dealer {
   /**
    *
    * @param slug
+   *    the slug name
    */
   public void setSlug(String slug) {
     this.slug = slug;
@@ -106,7 +111,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the accepted currency
    */
   public String getCurrency() {
     return currency;
@@ -115,6 +120,7 @@ public class Dealer {
   /**
    *
    * @param currency
+   *    the accepted currency
    */
   public void setCurrency(String currency) {
     this.currency = currency;
@@ -122,7 +128,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the ISO 8601 formatted timestamp of dealer's entry creation
    */
   public String getCreatedAt() {
     return createdAt;
@@ -131,6 +137,7 @@ public class Dealer {
   /**
    *
    * @param createdAt
+   *    the ISO 8601 formatted timestamp of dealer's entry creation
    */
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
@@ -138,7 +145,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the ISO 8601 formatted timestamp of last entry's update
    */
   public String getUpdatedAt() {
     return updatedAt;
@@ -147,6 +154,7 @@ public class Dealer {
   /**
    *
    * @param updatedAt
+   *    the ISO 8601 formatted timestamp of last entry's update
    */
   public void setUpdatedAt(String updatedAt) {
     this.updatedAt = updatedAt;
@@ -154,7 +162,7 @@ public class Dealer {
 
   /**
    *
-   * @return
+   * @return the address of the dealer
    */
   public Address getAddress() {
     return address;
@@ -163,6 +171,7 @@ public class Dealer {
   /**
    *
    * @param address
+   *    the address of the dealer
    */
   public void setAddress(Address address) {
     this.address = address;

@@ -21,7 +21,7 @@ public enum DealerType {
 
   /**
    *
-   * @return
+   * @return the JSON string representation of the DealerType
    */
   @JsonValue
   public String type() {

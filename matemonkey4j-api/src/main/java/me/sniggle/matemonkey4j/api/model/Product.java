@@ -21,7 +21,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the internal ID
    */
   public String getId() {
     return id;
@@ -30,6 +30,7 @@ public class Product {
   /**
    *
    * @param id
+   *    the internal ID
    */
   public void setId(String id) {
     this.id = id;
@@ -37,7 +38,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the product name
    */
   public String getName() {
     return name;
@@ -46,6 +47,7 @@ public class Product {
   /**
    *
    * @param name
+   *    the product name
    */
   public void setName(String name) {
     this.name = name;
@@ -53,7 +55,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the product description
    */
   public String getDescription() {
     return description;
@@ -62,6 +64,7 @@ public class Product {
   /**
    *
    * @param description
+   *    the product description
    */
   public void setDescription(String description) {
     this.description = description;
@@ -69,7 +72,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the slug name
    */
   public String getSlug() {
     return slug;
@@ -78,6 +81,7 @@ public class Product {
   /**
    *
    * @param slug
+   *    the slug name
    */
   public void setSlug(String slug) {
     this.slug = slug;
@@ -85,7 +89,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the product type
    */
   public ProductType getType() {
     return type;
@@ -94,6 +98,7 @@ public class Product {
   /**
    *
    * @param type
+   *    the product type
    */
   public void setType(ProductType type) {
     this.type = type;
@@ -101,7 +106,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the image url
    */
   public String getImage() {
     return image;
@@ -110,6 +115,7 @@ public class Product {
   /**
    *
    * @param image
+   *    the image url
    */
   public void setImage(String image) {
     this.image = image;
@@ -117,7 +123,7 @@ public class Product {
 
   /**
    *
-   * @return
+   * @return the producer of the product
    */
   public Producer getProducer() {
     return producer;
@@ -126,6 +132,7 @@ public class Product {
   /**
    *
    * @param producer
+   *    the producer of the product
    */
   public void setProducer(Producer producer) {
     this.producer = producer;

@@ -18,7 +18,7 @@ public enum Quantity {
 
   /**
    *
-   * @return
+   * @return the JSON string representation of the allowed quantities
    */
   @JsonValue
   public String quantity() {
